@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+<!-- Base Definition Start -->
+
+	<definition name="new.definations" template="/WEB-INF/tiles/layouts/newLayout.jsp">
+
+		<put-attribute name="body-content" value=""/>
+
+	</definition>
+
+	<!-- Base Definition End -->
+	<!--
+ <definition name="empty-header-layout" extends="base-definition">
+        <put-attribute name="header-content" value="/WEB-INF/views/tiles/template/blank.jsp"/>
+    </definition>create-employee
+
+    <definition name="empty-footer-layout" extends="base-definition">
+        <put-attribute name="footer-content" value="/WEB-INF/views/tiles/template/blank.jsp"/>
+    </definition> 
+	-->
+	<!-- error pages Definition begin-->
+	<!--<definition name="error" extends="home.definations">
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/error-pages/error.jsp"/>
+	</definition>
+	<definition name="404" extends="home.definations">
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/error-pages/pages-404.jsp"/>
+	</definition>
+	<definition name="403" extends="home.definations">
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/error-pages/pages-403.jsp"/>
+	</definition>
+	<definition name="400" extends="home.definations">
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/error-pages/pages-400.jsp"/>
+	</definition>
+	<definition name="500" extends="home.definations">
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/error-pages/pages-500.jsp"/>
+	</definition>
+	<definition name="503" extends="home.definations">
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/error-pages/pages-503.jsp"/>
+	</definition>
+	<definition name="login/*" extends="home.definations">
+		<put-attribute name="title" value="Login"/>
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/login/{1}.jsp"/>
+	</definition>-->
+	
+<!-- 		<definition name="device/*" extends="new.definations">
+		<put-attribute name="title" value="Link_Devices"/>
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/device/linked_devices1.jsp"/>
+	</definition> -->
+	
+	<!-- login pages Definition end-->
+	<!-- login pages Definition begin-->
+
+<!--	<definition name="boot" extends="base.defination">
+		<put-attribute name="title" value=""/>
+		<put-attribute name="body-content" value="/WEB-INF/views/device/boot.jsp"/>
+	</definition>-->
+	
+	<definition name="device/boot" extends="new.definations">
+		<put-attribute name="body-content" value="/WEB-INF/views/device/boot.jsp"/>
+	</definition>
+	<!--
+	<definition name="campaign/*" extends="new.definations">
+		<put-attribute name="title" value="Campaign"/>
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/campaign/{1}.jsp"/>
+	</definition>
+	
+	<definition name="campaign/doc/*" extends="docx.definations">
+		<put-attribute name="title" value="campaign"/>
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/campaign/{1}.jsp"/>
+	</definition>
+	-->
+	<!--<definition name="screen-share-content-layout" extends="new.definations">
+		<put-attribute name="title" value="Campaign Creation"/>
+		<put-attribute name="body-content">
+			<definition template="/WEB-INF/views/pages/campaign/screen-share-content-layout.jsp">
+				<put-attribute name="screen-share-layouts" value="/WEB-INF/views/pages/campaign/screen-share-layouts.jsp" />
+			</definition>
+		</put-attribute>
+	</definition>
+	
+	<definition name="time-share-content-layout" extends="new.definations">
+		<put-attribute name="title" value="Campaign Creation"/>
+		<put-attribute name="body-content">
+			<definition template="/WEB-INF/views/pages/campaign/time-share-content-layout.jsp">
+				<put-attribute name="time-share-layouts" value="/WEB-INF/views/pages/campaign/time-share-layouts.jsp" />
+				<put-attribute name="time-share-preview-layouts" value="/WEB-INF/views/pages/campaign/time-share-preview-layouts.jsp" />
+			</definition>
+		</put-attribute>
+	</definition>
+	
+	<definition name="linked_devices" extends="new.definations">
+		<put-attribute name="title" value="linked_devices"/>
+		<put-attribute name="body-content" value="/WEB-INF/views/linked_devices.jsp"/>
+	</definition>-->
+	
+<!-- <definition name="forgetpwd" extends="home.definations">
+		<put-attribute name="title" value="forgetpwd"/>
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/login/forgetpwd.jsp"/>
+	</definition> -->
+	
+<!-- 	<definition name="device-display/*" extends="new.definations">
+		<put-attribute name="title" value="IRCDMA"/>
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/ircdma/device-display/{1}.jsp"/>
+	</definition>
+
+	<definition name="user-profile/*" extends="new.definations">
+		<put-attribute name="title" value="Profile"/>
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/ircdma/user-profile/{1}.jsp"/>
+	</definition>
+	
+	<definition name="encode-text" extends="new.definations">
+		<put-attribute name="title" value="Enocde Text"/>
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/ircdma/dashboard/encode-text.jsp"/>
+	</definition>
+	
+	<definition name="user-profile" extends="new.definations">
+		<put-attribute name="title" value="Profile"/>
+		<put-attribute name="body-content" value="/WEB-INF/views/pages/ircdma/dashboard/user-profile.jsp"/>
+	</definition> -->
+
+</tiles-definitions>
